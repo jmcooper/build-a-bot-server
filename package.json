@@ -1,0 +1,25 @@
+{
+  "name": "build-a-bot-api",
+  "version": "1.0.0",
+  "description": "An Api used by the Pluralsight Vue.js Fundamentals course",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/jmcooper/build-a-bot-api.git"
+  },
+  "keywords": [
+    "Vue.js",
+    "funamentals",
+    "training",
+    "api"
+  ],
+  "author": "Jim Cooper",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jmcooper/build-a-bot-api/issues"
+  },
+  "homepage": "https://github.com/jmcooper/build-a-bot-api#readme"
+}
