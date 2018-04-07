@@ -3,8 +3,6 @@ const serve = require("express-static");
 
 const app = express();
 
-app.post("/add-to-cart", (req, res) => res.status(201));
-
 app.get("/parts", (req, res) =>
   res.send({
     heads: [
@@ -82,6 +80,12 @@ app.get("/parts", (req, res) =>
       }
     ]
   })
+);
+
+app.post("/cart", (req, res) => res.status(201).send());
+
+app.post("/cart-slow", (req, res) =>
+  setTimeout(() => res.status(201).send(), 2000)
 );
 
 app.use("/images", serve(__dirname + "/images"));
