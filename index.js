@@ -65,7 +65,7 @@ app.get("/parts", (req, res) =>
         id: 2,
         description: "An arm with two independent claws -- great when you need an extra hand. Need four hands? Equip your bot with two of these arms.",
         title: "Two Clawed",
-        src: "/api/images/arm-stubby-claw.png",
+        src: "/api/images/arm-dual-claw.png",
         type: "arms",
         cost: 285
       },
