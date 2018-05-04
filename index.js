@@ -38,7 +38,7 @@ app.get("/parts", (req, res) =>
         description:
           "A simple single-eyed head -- simple and inexpensive.",
         title: "Small Cyclops",
-        src: "/api/images/head-big-eye.png",
+        src: "/api/images/head-single-eye.png",
         type: "heads",
         cost: 750.0
       },
