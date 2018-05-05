@@ -167,7 +167,9 @@ app.get("/parts", (req, res) =>
   })
 );
 
-app.post("/cart", (req, res) => res.status(201).send());
+app.post("/cart", (req, res) => 
+  setTimeout(() => res.status(201).send(), 500)
+);
 
 app.post("/sign-in", (req, res) => res.status(200).send());
 
