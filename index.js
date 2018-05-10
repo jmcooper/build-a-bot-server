@@ -1,9 +1,9 @@
+const path = require('path')
 const express = require("express");
-const serve = require("express-static");
 
 const app = express();
 
-app.get("/parts", (req, res) =>
+app.get("/api/parts", (req, res) =>
   res.send({
     heads: [
       {
@@ -167,16 +167,12 @@ app.get("/parts", (req, res) =>
   })
 );
 
-app.post("/cart", (req, res) => 
+app.post("/api/cart", (req, res) => 
   setTimeout(() => res.status(201).send(), 800)
 );
 
-app.post("/sign-in", (req, res) => res.status(200).send());
+app.post("/api/sign-in", (req, res) => res.status(200).send());
 
-app.post("/cart-slow", (req, res) =>
-  setTimeout(() => res.status(201).send(), 2000)
-);
-
-app.use("/images", serve(__dirname + "/images"));
+app.use("/api/images", express.static("images"));
 
 app.listen(8081, () => console.log("Example app listening on port 8081!"));

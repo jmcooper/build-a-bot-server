@@ -23,7 +23,6 @@
   },
   "homepage": "https://github.com/jmcooper/build-a-bot-api#readme",
   "dependencies": {
-    "express": "^4.16.3",
-    "express-static": "^1.2.5"
+    "express": "^4.16.3"
   }
 }
