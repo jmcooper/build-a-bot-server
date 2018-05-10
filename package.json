@@ -1,14 +1,14 @@
 {
-  "name": "build-a-bot-api",
+  "name": "build-a-bot-server",
   "version": "1.0.0",
-  "description": "An Api used by the Pluralsight Vue.js Fundamentals course",
+  "description": "A server used by the Pluralsight Vue.js Fundamentals course",
   "main": "index.js",
   "scripts": {
     "start": "node ."
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/jmcooper/build-a-bot-api.git"
+    "url": "git+ssh://git@github.com/jmcooper/build-a-bot-server.git"
   },
   "keywords": [
     "Vue.js",
@@ -19,9 +19,9 @@
   "author": "Jim Cooper",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jmcooper/build-a-bot-api/issues"
+    "url": "https://github.com/jmcooper/build-a-bot-server/issues"
   },
-  "homepage": "https://github.com/jmcooper/build-a-bot-api#readme",
+  "homepage": "https://github.com/jmcooper/build-a-bot-server#readme",
   "dependencies": {
     "express": "^4.16.3"
   }
