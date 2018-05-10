@@ -3,7 +3,7 @@ const express = require("express");
 
 const app = express();
 
-app.get("/api/parts", (req, res) =>
+app.get('/api/parts', (req, res) =>
   res.send({
     heads: [
       {
@@ -167,12 +167,12 @@ app.get("/api/parts", (req, res) =>
   })
 );
 
-app.post("/api/cart", (req, res) => 
+app.post('/api/cart', (req, res) => 
   setTimeout(() => res.status(201).send(), 800)
 );
 
-app.post("/api/sign-in", (req, res) => res.status(200).send());
+app.post('/api/sign-in', (req, res) => res.status(200).send());
 
-app.use("/api/images", express.static("images"));
+app.use('/api/images', express.static('images'));
 
-app.listen(8081, () => console.log("Example app listening on port 8081!"));
+app.listen(8081, () => console.log('Server listening on port 8081!'));
