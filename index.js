@@ -107,15 +107,15 @@ app.get('/api/parts', (req, res) =>
       {
         id: 2,
         description: "A less flexible torso with a battery gauge.",
-        title: "Gauged",
+        title: "Restricted Gauged",
         src: "/api/images/torso-gauged.png",
         type: "torsos",
         cost: 1385
       },
       {
-        id: 2,
+        id: 3,
         description: "A simple torso with a pouch for carrying items.",
-        title: "Gauged",
+        title: "Basic Gauged",
         src: "/api/images/torso-pouch.png",
         type: "torsos",
         cost: 785,
@@ -167,7 +167,7 @@ app.get('/api/parts', (req, res) =>
   })
 );
 
-app.post('/api/cart', (req, res) => 
+app.post('/api/cart', (req, res) =>
   setTimeout(() => res.status(201).send(), 800)
 );
 
@@ -176,4 +176,3 @@ app.post('/api/sign-in', (req, res) => res.status(200).send());
 app.use('/api/images', express.static('images'));
 
 app.listen(8081, () => console.log('Server listening on port 8081!'));
-
