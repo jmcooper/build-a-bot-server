@@ -113,7 +113,7 @@ app.get('/api/parts', (req, res) =>
         cost: 1385
       },
       {
-        id: 2,
+        id: 3,
         description: "A simple torso with a pouch for carrying items.",
         title: "Gauged",
         src: "/api/images/torso-pouch.png",
